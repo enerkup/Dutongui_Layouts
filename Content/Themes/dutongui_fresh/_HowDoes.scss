@@ -1,0 +1,20 @@
+section.HowDoes {
+
+    .card {
+        @extend %border-cards;
+        border-radius: 25px;
+        &__HowDoes {
+            padding: 20px;
+            &__title {
+                color: blue;
+            }
+            &__desc {
+                color: yellow;
+            }
+        }
+    }
+    
+    video {
+        max-width: 100%;
+    }
+}

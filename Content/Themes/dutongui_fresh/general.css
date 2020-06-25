@@ -1,0 +1,78 @@
+.Introducing {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #0051D2 0%, #6EC1E4 100%);
+  position: relative;
+  margin-bottom: 100px;
+}
+.Introducing:before {
+  background-image: url("../../Images/fondo-home-principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.27;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.Introducing h1 {
+  color: white;
+}
+.Introducing video {
+  width: 300px;
+}
+
+section.WantLearn .card, section.HowDoes .card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+section.HowDoes .card {
+  border-radius: 25px;
+}
+section.HowDoes .card__HowDoes {
+  padding: 20px;
+}
+section.HowDoes .card__HowDoes__title {
+  color: blue;
+}
+section.HowDoes .card__HowDoes__desc {
+  color: yellow;
+}
+section.HowDoes video {
+  max-width: 100%;
+}
+
+section.WantLearn .card {
+  border-radius: 6px;
+}
+section.WantLearn .card__languages {
+  padding: 20px;
+  border-bottom: 5px solid #0762d9;
+}
+section.WantLearn .card__languages:hover {
+  border-bottom: 5px solid #30d979;
+}
+section.WantLearn .card__languages__image img {
+  max-width: 100%;
+}
+
+section.WhyDutongui {
+  background-color: rgba(242, 242, 242, 0.6784313725);
+}
+
+section.Today {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #6EC1E4 0%, #243A9F 100%);
+}
+section.Today h2 {
+  color: white;
+}
+section.Today h3 {
+  color: white;
+}
+
+footer {
+  background-color: #080b28;
+}
+
+/*# sourceMappingURL=general.css.map */

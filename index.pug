@@ -1,0 +1,112 @@
+doctype html
+html(lang='en')
+    head
+        title Dutongui
+        link(rel="stylesheet" href="./Content/css/bootstrap.css")
+        link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css")
+
+
+    mixin popular_video(v_source)
+        video(src=v_source,autoplay,loop,muted="muted",playsinline,controlslist="nodownload")
+        
+    mixin list(text)
+        li.square_ad= text
+        
+    mixin square_media(social_icon)
+        li.square_ad= titulo
+        
+    mixin card_languages(imagen)
+        .col-xs-6
+            .card
+                .card__languages
+                    .card__languages__image
+                        img(src=imagen)
+
+    mixin card_HowDoes(title,desc)
+        .card
+            .card__HowDoes
+                h2.card__HowDoes__title= title
+                p.card__HowDoes__desc= desc
+                        
+
+    mixin card_WhyDutongui(title,desc)
+        .col-xs-6
+            .card
+                .card__HowDoes
+                    h3.card__HowDoes__title= title
+                    p.card__HowDoes__desc= desc
+
+    
+    body
+        .container-fluid.Introducing
+            .container 
+                .row
+                    .col-xs-12
+                        img(src="./Content/Images/top_logo.png")
+
+                .row
+                    .col-xs-6
+                        h1 Learn a new language with private online lessons                           
+                    .col-xs-6 
+                        img(class="img-responsive" src="./Content/Images/lap1.png")
+                        +popular_video('./Content/Videos/ejemplo-hoy.mp4')
+                            
+        
+        section.HowDoes
+            .container
+                    .row 
+                        .col-xs-12
+                            h2 How does it work?
+                    .row 
+                        .col-xs-7 
+                            +popular_video('./Content/Videos/ejemplo-2a.mp4')
+                        .col-xs-5
+                            +card_HowDoes('1. Choose Your Professor','Look at the teachers’ profiles and choose the one you like best.')
+        
+        section.WhyDutongui
+            .container
+                .row
+                    .col-xs-12
+                        h2.text-center Why Dutongui
+                .row
+                    .col-xs-6
+                        .row
+                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
+                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
+                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
+                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')                                                        
+                    .col-xs-6
+                        img(class="img-responsive" src="./Content/Images/why_dutongui.jpg")
+                        
+
+
+        section.WantLearn
+            .container
+                .col-xs-6
+                    h2 What language do you want to learn? 
+                .col-xs-6
+                    .row
+                        +card_languages('./Content/Images/coreano.jpg')
+                        +card_languages('./Content/Images/espanol.jpg')
+                        +card_languages('./Content/Images/portugues.jpg')
+                        +card_languages('./Content/Images/ingles.jpg')
+
+        section.Today
+            .container
+                h2.text-center GET STARTED TODAY
+                h3.text-center Get your first lesson free!
+                a(href="/login" class="sas") Book a free trial
+
+                        
+
+        footer
+            .container
+                .col-xs-4
+                    ul
+                        +list('ARE YOU AN ONLINE TEACHER?')
+                        +list('CODE OF CONDUCT')
+                        +list('CONTACT US')
+
+                .col-xs-4
+                        
+                .col-xs-4

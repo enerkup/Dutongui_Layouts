@@ -1,0 +1,18 @@
+section.WantLearn{
+    .card {
+        @extend %border-cards;
+        border-radius: 6px;
+        &__languages {
+            padding: 20px;
+            border-bottom: 5px solid $card_langs_bb;
+            &:hover {
+                border-bottom: 5px solid $card_langs_bb_h;
+            }
+            &__image {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }    
+}
