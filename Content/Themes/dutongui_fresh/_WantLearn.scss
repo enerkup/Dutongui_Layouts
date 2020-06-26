@@ -1,12 +1,12 @@
-section.WantLearn{
+.WantLearn{
     .card {
         @extend %border-cards;
         border-radius: 6px;
         &__languages {
             padding: 20px;
-            border-bottom: 5px solid $card_langs_bb;
+            border-bottom: 5px solid $blue_card;
             &:hover {
-                border-bottom: 5px solid $card_langs_bb_h;
+                border-bottom: 5px solid $green_langs_bb_h;
             }
             &__image {
                 img {
@@ -14,5 +14,8 @@ section.WantLearn{
                 }
             }
         }
-    }    
+    }
+    &__Title {
+        color: $blue_font;
+    }
 }

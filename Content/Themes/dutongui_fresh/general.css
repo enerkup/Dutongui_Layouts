@@ -1,3 +1,7 @@
+.WhyDutongui .card__Why, .WantLearn .card, .HowDoes .card {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
 .Introducing {
   background-color: transparent;
   background-image: linear-gradient(180deg, #0051D2 0%, #6EC1E4 100%);
@@ -15,59 +19,129 @@
   width: 100%;
   height: 100%;
 }
-.Introducing h1 {
+.Introducing__waves {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+.Introducing__waves img {
+  width: calc(260% + 1.3px);
+  height: 120px;
+  transform: translateX(-50%) rotateY(180deg);
+  left: 50%;
+  position: relative;
+}
+.Introducing__video {
+  padding: 33px;
+}
+.Introducing__video video {
+  width: 352px;
+  position: absolute;
+  top: 63px;
+  right: 118px;
+}
+.Introducing__Menu {
+  margin-top: 20px;
+}
+.Introducing__Menu__Center {
+  text-align: center;
+}
+.Introducing__Menu__Center img {
+  width: 90px;
+}
+.Introducing__First__link {
+  text-align: center;
+}
+.Introducing__First__link a.send_section {
+  border-radius: 45px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: #CE0008;
+  color: white;
+  padding: 15px 30px;
+  border: 2px solid white;
+}
+.Introducing__First__link a.send_section:hover {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Introducing__First h1 {
   color: white;
 }
-.Introducing video {
-  width: 300px;
+.Introducing__First p {
+  color: white;
 }
 
-section.WantLearn .card, section.HowDoes .card {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
-}
-
-section.HowDoes .card {
+.HowDoes .card {
   border-radius: 25px;
 }
-section.HowDoes .card__HowDoes {
+.HowDoes .card__How {
   padding: 20px;
 }
-section.HowDoes .card__HowDoes__title {
-  color: blue;
+.HowDoes .card__How__title {
+  color: #0762d9;
 }
-section.HowDoes .card__HowDoes__desc {
-  color: yellow;
+.HowDoes .card__How__desc {
+  color: gray;
 }
-section.HowDoes video {
+.HowDoes__Title {
+  color: #0762d9;
+}
+.HowDoes video {
   max-width: 100%;
 }
 
-section.WantLearn .card {
+.WantLearn .card {
   border-radius: 6px;
 }
-section.WantLearn .card__languages {
+.WantLearn .card__languages {
   padding: 20px;
   border-bottom: 5px solid #0762d9;
 }
-section.WantLearn .card__languages:hover {
+.WantLearn .card__languages:hover {
   border-bottom: 5px solid #30d979;
 }
-section.WantLearn .card__languages__image img {
+.WantLearn .card__languages__image img {
   max-width: 100%;
 }
-
-section.WhyDutongui {
-  background-color: rgba(242, 242, 242, 0.6784313725);
+.WantLearn__Title {
+  color: #0762d9;
 }
 
-section.Today {
+.WhyDutongui {
+  background-color: rgba(242, 242, 242, 0.6784313725);
+  padding: 3em 1em 4em 1em;
+}
+.WhyDutongui__Title h2 {
+  color: #0762d9;
+  margin: 0px;
+  text-align: center;
+}
+.WhyDutongui .card__Why {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+.WhyDutongui .card__Why__title {
+  color: #0762d9;
+}
+.WhyDutongui .card__Why__desc {
+  color: #696C7B;
+}
+
+.Today {
   background-color: transparent;
   background-image: linear-gradient(90deg, #6EC1E4 0%, #243A9F 100%);
 }
-section.Today h2 {
+.Today h2 {
   color: white;
 }
-section.Today h3 {
+.Today h3 {
   color: white;
 }
 

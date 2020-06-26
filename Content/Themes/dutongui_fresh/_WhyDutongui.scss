@@ -1,3 +1,25 @@
-section.WhyDutongui {
+.WhyDutongui {
     background-color: rgba(242, 242, 242, 0.6784313725490196);
+    padding: 3em 1em 4em 1em;
+    &__Title {
+        h2 {
+            color: $blue_font;
+            margin: 0px;
+            text-align: center;
+        }
+    }
+    .card {
+        &__Why {
+            @extend %border-cards;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+            &__title {
+                color: $blue_font;
+            }
+            &__desc {
+                color: #696C7B;
+            }
+        }
+    }
 }

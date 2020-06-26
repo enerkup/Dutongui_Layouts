@@ -1,80 +1,65 @@
 doctype html
-html(lang='en')
+html(lang='en') 
     head
         title Dutongui
         link(rel="stylesheet" href="./Content/css/bootstrap.css")
         link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css")
 
-
-    mixin popular_video(v_source)
-        video(src=v_source,autoplay,loop,muted="muted",playsinline,controlslist="nodownload")
-        
-    mixin list(text)
-        li.square_ad= text
-        
-    mixin square_media(social_icon)
-        li.square_ad= titulo
-        
-    mixin card_languages(imagen)
-        .col-xs-6
-            .card
-                .card__languages
-                    .card__languages__image
-                        img(src=imagen)
-
-    mixin card_HowDoes(title,desc)
-        .card
-            .card__HowDoes
-                h2.card__HowDoes__title= title
-                p.card__HowDoes__desc= desc
-                        
-
-    mixin card_WhyDutongui(title,desc)
-        .col-xs-6
-            .card
-                .card__HowDoes
-                    h3.card__HowDoes__title= title
-                    p.card__HowDoes__desc= desc
-
+    include mixins.pug
     
     body
         .container-fluid.Introducing
             .container 
-                .row
-                    .col-xs-12
+                .row.Introducing__Menu
+                    .col-xs-5.Introducing__Menu__Left
+                        ul
+                            li
+                                p Find a teacher 
+                    .col-xs-2.Introducing__Menu__Center
                         img(src="./Content/Images/top_logo.png")
+                    .col-xs-5.Introducint_Menu_Right
+                        ul 
+                            li
+                                p Log in
+                            li
+                                p Sign up 
 
                 .row
-                    .col-xs-6
+                    .col-xs-6.Introducing__First
                         h1 Learn a new language with private online lessons                           
-                    .col-xs-6 
+                        p Choose a private tutor and start to learn that language you’ve always wanted once and for all!
+                        .Introducing__First__link
+                            a.send_section GET STARTED TODAY
+                    .col-xs-6.Introducing__video
                         img(class="img-responsive" src="./Content/Images/lap1.png")
                         +popular_video('./Content/Videos/ejemplo-hoy.mp4')
+            .Introducing__waves
+                img(src="./Content/Images/waves.svg")
                             
-        
+         
         section.HowDoes
             .container
-                    .row 
-                        .col-xs-12
+                    .row
+                        .col-xs-12.HowDoes__Title
                             h2 How does it work?
-                    .row 
+                    .row
                         .col-xs-7 
                             +popular_video('./Content/Videos/ejemplo-2a.mp4')
                         .col-xs-5
                             +card_HowDoes('1. Choose Your Professor','Look at the teachers’ profiles and choose the one you like best.')
         
-        section.WhyDutongui
+        section.WhyDutongui 
             .container
                 .row
-                    .col-xs-12
-                        h2.text-center Why Dutongui
+                    .col-xs-12.WhyDutongui__Title
+                        h2 Why Dutongui
                 .row
                     .col-xs-6
                         .row
                             +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
-                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
-                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')
-                            +card_WhyDutongui('PROFESSIONAL TEACHERS','more')                                                        
+                            +card_WhyDutongui('TIME FLEXIBILITY','more')
+                            +card_WhyDutongui('STRONG INTERNET CONNECTION','more')
+                            +card_WhyDutongui('FAST LEARNING','more')                                                        
                     .col-xs-6
                         img(class="img-responsive" src="./Content/Images/why_dutongui.jpg")
                         
@@ -82,8 +67,8 @@ html(lang='en')
 
         section.WantLearn
             .container
-                .col-xs-6
-                    h2 What language do you want to learn? 
+                .col-xs-6.WantLearn__Title
+                    h2 What language do you want to learn?
                 .col-xs-6
                     .row
                         +card_languages('./Content/Images/coreano.jpg')

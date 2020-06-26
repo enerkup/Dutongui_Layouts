@@ -1,0 +1,28 @@
+mixin popular_video(v_source)
+    video(src=v_source,autoplay,loop,muted="muted",playsinline,controlslist="nodownload")
+        
+mixin list(text)
+    li.square_ad= text
+        
+mixin square_media(social_icon)
+    li.square_ad= titulo
+        
+mixin card_languages(imagen)
+    .col-xs-6
+        .card
+            .card__languages
+                .card__languages__image
+                    img(src=imagen)
+
+mixin card_HowDoes(title,desc)
+    .card
+        .card__How
+            h2.card__How__title= title
+            p.card__How__desc= desc
+                        
+mixin card_WhyDutongui(title,desc) 
+    .col-xs-6
+        .card
+            .card__Why
+                h3.card__Why__title= title
+                p.card__Why__desc= desc

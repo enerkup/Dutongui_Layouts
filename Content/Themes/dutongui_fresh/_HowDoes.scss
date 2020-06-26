@@ -1,19 +1,20 @@
-section.HowDoes {
-
+.HowDoes {
     .card {
         @extend %border-cards;
         border-radius: 25px;
-        &__HowDoes {
+        &__How {
             padding: 20px;
             &__title {
-                color: blue;
+                color: $blue_font;
             }
             &__desc {
-                color: yellow;
+                color: gray;
             }
         }
     }
-    
+    &__Title {
+        color: $blue_font;
+    }
     video {
         max-width: 100%;
     }
