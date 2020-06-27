@@ -2,10 +2,13 @@
     background-color: rgba(242, 242, 242, 0.6784313725490196);
     padding: 3em 1em 4em 1em;
     &__Title {
+        font-family: 'Palanquin Dark', sans-serif;
+        margin-bottom: 35px;
         h2 {
             color: $blue_font;
             margin: 0px;
             text-align: center;
+            font-size: 4rem;
         }
     }
     .card {
@@ -16,6 +19,8 @@
             background-color: white;
             &__title {
                 color: $blue_font;
+                margin: 0px;
+                font-family: 'Palanquin Dark', sans-serif;                
             }
             &__desc {
                 color: #696C7B;

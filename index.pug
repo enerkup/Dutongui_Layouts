@@ -1,35 +1,40 @@
-doctype html
-html(lang='en') 
+doctype html 
+html(lang='en')
     head
         title Dutongui
         link(rel="stylesheet" href="./Content/css/bootstrap.css")
         link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css")
-
-    include mixins.pug
+        link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/fonts/fontawesome-free-5.13.1-web/css/all.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&display=swap")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap")
+    include mixins.pug 
     
-    body
+    body 
         .container-fluid.Introducing
-            .container 
-                .row.Introducing__Menu
-                    .col-xs-5.Introducing__Menu__Left
-                        ul
-                            li
-                                p Find a teacher 
-                    .col-xs-2.Introducing__Menu__Center
-                        img(src="./Content/Images/top_logo.png")
-                    .col-xs-5.Introducint_Menu_Right
-                        ul 
-                            li
-                                p Log in
-                            li
-                                p Sign up 
-
+            .container  
                 .row
-                    .col-xs-6.Introducing__First
+                    ul.Introducing__Menu
+                        li.col-xs-5.Introducing__Menu__Left
+                                 p Find a teacher 
+                        li.col-xs-2.Introducing__Menu__Center
+                            img(src="./Content/Images/top_logo.png")
+                        li.col-xs-5.Introducing__Menu__Right
+                            ul.Introducing__Menu__Right__Child
+                                li
+                                    p Log in
+                                li
+                                    p Sign up 
+
+                .row  
+                    .col-xs-6.Introducing__First   
                         h1 Learn a new language with private online lessons                           
                         p Choose a private tutor and start to learn that language you’ve always wanted once and for all!
                         .Introducing__First__link
-                            a.send_section GET STARTED TODAY
+                            a.send_section GET STARTED TODAY 
+                                <i aria-hidden="true" class="fas fa-arrow-down"></i>
+                                <i class="fab fa-facebook-f"></i>
                     .col-xs-6.Introducing__video
                         img(class="img-responsive" src="./Content/Images/lap1.png")
                         +popular_video('./Content/Videos/ejemplo-hoy.mp4')
@@ -52,7 +57,7 @@ html(lang='en')
             .container
                 .row
                     .col-xs-12.WhyDutongui__Title
-                        h2 Why Dutongui
+                        h2 Why Dutongui? 
                 .row
                     .col-xs-6
                         .row
@@ -78,9 +83,12 @@ html(lang='en')
 
         section.Today
             .container
-                h2.text-center GET STARTED TODAY
-                h3.text-center Get your first lesson free!
-                a(href="/login" class="sas") Book a free trial
+                .Today__Title
+                    h2 GET STARTED TODAY
+                .Today__SubTitle
+                    h3 Get your first lesson free!
+                .Today__Link
+                    a(href="/login" class="sas") Book a free trial
 
                         
 

@@ -7,6 +7,7 @@
   background-image: linear-gradient(180deg, #0051D2 0%, #6EC1E4 100%);
   position: relative;
   margin-bottom: 100px;
+  padding-top: 20px;
 }
 .Introducing:before {
   background-image: url("../../Images/fondo-home-principal.jpg");
@@ -45,13 +46,35 @@
   right: 118px;
 }
 .Introducing__Menu {
-  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.Introducing__Menu li {
+  display: inline-block;
 }
 .Introducing__Menu__Center {
   text-align: center;
 }
 .Introducing__Menu__Center img {
   width: 90px;
+}
+.Introducing__Menu__Right {
+  text-align: right;
+}
+.Introducing__Menu__Right__Child {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.Introducing__Menu__Right__Child li {
+  display: inline-block;
+}
+.Introducing__Menu p {
+  margin: 0;
+  font-size: 19px;
 }
 .Introducing__First__link {
   text-align: center;
@@ -72,9 +95,13 @@
 }
 .Introducing__First h1 {
   color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 43px;
 }
 .Introducing__First p {
   color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
 }
 
 .HowDoes .card {
@@ -84,13 +111,22 @@
   padding: 20px;
 }
 .HowDoes .card__How__title {
+  font-family: "Montserrat", Sans-serif;
   color: #0762d9;
+  font-style: italic;
+  font-weight: bold;
 }
 .HowDoes .card__How__desc {
-  color: gray;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
 }
 .HowDoes__Title {
   color: #0762d9;
+  font-family: "Palanquin Dark", sans-serif;
+}
+.HowDoes__Title h2 {
+  font-size: 4rem;
+  margin: 0;
 }
 .HowDoes video {
   max-width: 100%;
@@ -110,17 +146,30 @@
   max-width: 100%;
 }
 .WantLearn__Title {
+  font-family: "Palanquin Dark", sans-serif;
   color: #0762d9;
+  text-align: center;
+  border-bottom: 6px solid #52f28a;
+}
+.WantLearn__Title h2 {
+  font-size: 4rem;
+  line-height: 1.3em;
+  letter-spacing: 2px;
 }
 
 .WhyDutongui {
   background-color: rgba(242, 242, 242, 0.6784313725);
   padding: 3em 1em 4em 1em;
 }
+.WhyDutongui__Title {
+  font-family: "Palanquin Dark", sans-serif;
+  margin-bottom: 35px;
+}
 .WhyDutongui__Title h2 {
   color: #0762d9;
   margin: 0px;
   text-align: center;
+  font-size: 4rem;
 }
 .WhyDutongui .card__Why {
   padding: 20px;
@@ -129,6 +178,8 @@
 }
 .WhyDutongui .card__Why__title {
   color: #0762d9;
+  margin: 0px;
+  font-family: "Palanquin Dark", sans-serif;
 }
 .WhyDutongui .card__Why__desc {
   color: #696C7B;
@@ -137,12 +188,25 @@
 .Today {
   background-color: transparent;
   background-image: linear-gradient(90deg, #6EC1E4 0%, #243A9F 100%);
+  text-align: center;
+  padding: 50px 15px;
 }
-.Today h2 {
+.Today__Title {
+  font-family: "Montserrat", Sans-serif;
+}
+.Today__Title h2 {
   color: white;
 }
-.Today h3 {
+.Today__SubTitle {
+  font-family: "Montserrat", Sans-serif;
+}
+.Today__SubTitle h3 {
   color: white;
+}
+.Today__Link a {
+  background-color: #F8DF00;
+  padding: 10px;
+  border-radius: 50px 0px 50px 50px;
 }
 
 footer {

@@ -16,6 +16,14 @@
         }
     }
     &__Title {
+        font-family: 'Palanquin Dark', sans-serif;
         color: $blue_font;
+        text-align: center;
+        border-bottom: 6px solid #52f28a;
+        h2 {
+            font-size: 4rem;
+            line-height: 1.3em;
+            letter-spacing: 2px;
+        }
     }
 }
