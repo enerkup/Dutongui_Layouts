@@ -1,14 +1,24 @@
-<!DOCTYPE html >
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es-MX">
   <head>
-    <title>Dutongui</title>
-    <link rel="stylesheet" href="./Content/css/bootstrap.css"/>
-    <link rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css"/>
-    <link rel="stylesheet" href="./Content/Themes/dutongui_fresh/fonts/fontawesome-free-5.13.1-web/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&amp;display=swap"/>
+     <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dutongui - English Classes</title>
+    <link rel="stylesheet" href="./Content/css/bootstrap.css">
+    <link rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css">
+    <link rel="stylesheet" href="./Content/Themes/dutongui_fresh/fonts/fontawesome-free-5.13.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Palanquin:wght@400&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
   </head>
   <body> 
     <div class="container-fluid Introducing">
@@ -16,35 +26,36 @@
         <div class="row">
           <ul class="Introducing__Menu">
             <li class="col-xs-5 Introducing__Menu__Left">
-              <p>Find a teacher </p>
+              <p> <a href="/Usuario/BuscaProfesor">Find a teacher </a></p>
             </li>
-            <li class="col-xs-2 Introducing__Menu__Center"><img src="./Content/Images/top_logo.png"/></li>
+            <li class="col-xs-2 Introducing__Menu__Center"><img src="./Content/Images/top_logo.png"></li>
             <li class="col-xs-5 Introducing__Menu__Right">
               <ul class="Introducing__Menu__Right__Child">
-                <li>
-                  <p>Log in</p>
+                <li> 
+                  <p> <a href="#/" data-toggle="modal" data-target="#myLogin">Log in</a></p>
                 </li>
-                <li>
-                  <p>Sign up </p>
+                <li> 
+                  <p> <a href="/login" data-toggle="modal" data-target="#mySignUp">Sign up </a></p>
                 </li>
               </ul>
             </li>
           </ul>
         </div>
         <div class="row"> 
-          <div class="col-xs-6 Introducing__First">  
-            <h1>Learn a new language with private online lessons                           </h1>
+          <div class="col-xs-12 col-sm-6 Introducing__First">
+            <div class="Introducing__First__Title">                       
+              <h1>Learn a new language with private online lessons                           </h1>
+            </div>
             <p>Choose a private tutor and start to learn that language you’ve always wanted once and for all!</p>
-            <div class="Introducing__First__link"><a class="send_section">
-                GET STARTED TODAY <i aria-hidden="true" class="fas fa-arrow-down"></i>
-<i class="fab fa-facebook-f"></i></a></div>
+            <div class="Introducing__First__link"><a>
+                GET STARTED TODAY <i aria-hidden="true" class="fas fa-arrow-down"></i></a></div>
           </div>
-          <div class="col-xs-6 Introducing__video"><img class="img-responsive" src="./Content/Images/lap1.png"/>
-              <video src="./Content/Videos/ejemplo-hoy.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controlslist="nodownload"></video>
+          <div class="col-xs-12 col-sm-6 Introducing__video"><img class="img-responsive" src="./Content/Images/lap1.png">
+              <video src="./Content/Videos/ejemplo-hoy.mp4" autoplay loop muted="muted" playsinline controlslist="nodownload"></video>
           </div>
         </div>
       </div>
-      <div class="Introducing__waves"><img src="./Content/Images/waves.svg"/></div>
+      <div class="Introducing__waves"><img src="./Content/Images/waves.svg"></div>
     </div>
     <section class="HowDoes">
       <div class="container">
@@ -54,100 +65,125 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-7"> 
-              <video src="./Content/Videos/ejemplo-2a.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" controlslist="nodownload"></video>
+          <div class="col-xs-12 col-sm-7"> 
+              <video src="./Content/Videos/ejemplo-2a.mp4" autoplay loop muted="muted" playsinline controlslist="nodownload"></video>
           </div>
-          <div class="col-xs-5">
+          <div class="col-xs-12 col-sm-5">
               <div class="card">
                 <div class="card__How">
-                  <h2 class="card__How__title">1. Choose Your Professor</h2>
-                  <p class="card__How__desc">Look at the teachers’ profiles and choose the one you like best.</p>
+                  <div class="card__How__title">
+                    <h2>1. Choose Your Professor</h2>
+                  </div>
+                  <div class="card__How__desc">
+                    <p>Look at the teachers’ profiles and choose the one you like best.</p>
+                  </div>
                 </div>
               </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-5">
+              <div class="card">
+                <div class="card__How">
+                  <div class="card__How__title">
+                    <h2>2. Book A Lesson</h2>
+                  </div>
+                  <div class="card__How__desc">
+                    <p>Look at the teachers’ profiles and choose the one you like best.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-7">
+              <video src="./Content/Videos/ejemplo-2a.mp4" autoplay loop muted="muted" playsinline controlslist="nodownload"></video>
           </div>
         </div>
       </div>
     </section>
     <section class="WhyDutongui"> 
-      <div class="container">
+      <div class="container"> 
         <div class="row">
-          <div class="col-xs-12 WhyDutongui__Title">
+          <div class="col-xs-12 WhyDutongui__Title"> 
             <h2>Why Dutongui? </h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-6">
-            <div class="row">
-                <div class="col-xs-6">
+          <div class="col-xs-12 col-sm-6">
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-6">
                   <div class="card">
-                    <div class="card__Why"><i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
+                    <div class="card__Why"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
                       <h3 class="card__Why__title">PROFESSIONAL TEACHERS</h3>
-                      <p class="card__Why__desc">more</p>
+                      <p class="card__Why__desc">We only hire professional teacher so be sure you are taking classes with the best.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="card">
-                    <div class="card__Why"><i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
+                    <div class="card__Why"><i class="far fa-calendar-check" aria-hidden="true"></i>
                       <h3 class="card__Why__title">TIME FLEXIBILITY</h3>
-                      <p class="card__Why__desc">more</p>
+                      <p class="card__Why__desc">Since they are online private classes, you can take them whenever you want, from wherever you want.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="card">
-                    <div class="card__Why"><i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
+                    <div class="card__Why"><i class="fas fa-user-astronaut" aria-hidden="true"></i>
                       <h3 class="card__Why__title">STRONG INTERNET CONNECTION</h3>
-                      <p class="card__Why__desc">more</p>
+                      <p class="card__Why__desc">All our teachers have a super fast connection, therefore, the video and audio of the class are excellent.</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-12 col-sm-6">
                   <div class="card">
-                    <div class="card__Why"><i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
+                    <div class="card__Why"><i class="fas fa-laptop-medical" aria-hidden="true"></i>
                       <h3 class="card__Why__title">FAST LEARNING</h3>
-                      <p class="card__Why__desc">more</p>
+                      <p class="card__Why__desc">20 hours of private lessons equal one semester in a normal school therefore we guarantee you an extremely fast learning.</p>
                     </div>
                   </div>
                 </div>
             </div>
           </div>
-          <div class="col-xs-6"><img class="img-responsive" src="./Content/Images/why_dutongui.jpg"/></div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="WhyDutongui__Box"><span></span><img class="img-responsive" src="./Content/Images/why_dutongui.jpg">
+              <p>Start Your New Adventure Of Speaking A New Language On Dutongui.</p><a href="#">Find a teacher                                 </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="WantLearn">
       <div class="container">
-        <div class="col-xs-6 WantLearn__Title">
+        <div class="col-xs-12 col-sm-6 WantLearn__Title">
           <h2>What language do you want to learn?</h2>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-6">
           <div class="row">
-              <div class="col-xs-6">
+              <div class="col-xs-12 col-sm-6">
                 <div class="card">
                   <div class="card__languages">
-                    <div class="card__languages__image"><img src="./Content/Images/coreano.jpg"/></div>
+                    <div class="card__languages__image"><img src="./Content/Images/espanol.jpg"></div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="col-xs-12 col-sm-6">
                 <div class="card">
                   <div class="card__languages">
-                    <div class="card__languages__image"><img src="./Content/Images/espanol.jpg"/></div>
+                    <div class="card__languages__image"><img src="./Content/Images/coreano.jpg"></div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="col-xs-12 col-sm-6">
                 <div class="card">
                   <div class="card__languages">
-                    <div class="card__languages__image"><img src="./Content/Images/portugues.jpg"/></div>
+                    <div class="card__languages__image"><img src="./Content/Images/ingles.jpg"></div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="col-xs-12 col-sm-6">
                 <div class="card">
                   <div class="card__languages">
-                    <div class="card__languages__image"><img src="./Content/Images/ingles.jpg"/></div>
+                    <div class="card__languages__image"><img src="./Content/Images/portugues.jpg"></div>
                   </div>
                 </div>
               </div>
@@ -161,22 +197,84 @@
           <h2>GET STARTED TODAY</h2>
         </div>
         <div class="Today__SubTitle">
-          <h3>Get your first lesson free!</h3>
+          <h4>Get your first lesson free!</h4>
         </div>
-        <div class="Today__Link"><a class="sas" href="/login">Book a free trial</a></div>
+        <div class="Today__Link"><a class="sas" href="/login">Book a free trial<img src="./Content/Images/arrow.svg"></a></div>
       </div>
     </section>
-    <footer>
+    <script src="http://dutongui.com/Scripts/default/jquery-1.12.4.min.js"></script>
+    <script src="http://dutongui.com/Scripts/default/bootstrap.min.js"></script><div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <img class="img-responsive logo_login" src="/Content/images/logo_dutongui.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" id="inputCorreoLogin" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="inputPasswordLogin" class="form-control" onkeypress="return runScript(event);" placeholder="Password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="cmdEntrar" name="cmdEntrar" class="btn btn-default" onclick="AjaxGetUsuario();" value="Log in">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a id="olvidarPasswordLabel" href="/Usuario/OlvidarPassword">I have forgotten my password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <img class="img-responsive logo_login" src="/Content/images/logo_dutongui.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Name:">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputCorreoRegistro" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputUsuarioSkype" placeholder="Skype user:">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="inputAddPasswordLogin" placeholder="Password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="cmdRegistrar" name="cmdRegistrar" class="btn btn-default" onclick="guardaUsuario();" value="Sing up">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="/Usuario/RegistroProfesor" id="registrarteComoMaestroLabel">Register as a teacher</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="Cover__footer">
       <div class="container">
-        <div class="col-xs-4">
-          <ul>
+        <div class="col-xs-12 col-sm-4">
+          <ul class="Cover__footer__Left">
               <li class="square_ad">ARE YOU AN ONLINE TEACHER?</li>
               <li class="square_ad">CODE OF CONDUCT</li>
               <li class="square_ad">CONTACT US</li>
           </ul>
         </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4"></div>
+        <div class="col-xs-12 col-sm-4"><img class="img-responsive" src="./Content/Images/dutongui_black.png"></div>
+        <div class="col-xs-12 col-sm-4">
+          <h4>Social
+              <li class="square_ad"><a href="fab fa-facebook-f"></a></li>
+          </h4>
+        </div>
       </div>
     </footer>
   </body>

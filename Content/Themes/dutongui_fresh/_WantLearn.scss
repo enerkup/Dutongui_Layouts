@@ -1,10 +1,14 @@
 .WantLearn{
+    margin-top: 80px;
+    margin-bottom: 80px;
     .card {
         @extend %border-cards;
         border-radius: 6px;
         &__languages {
+            margin-bottom: 20px;
             padding: 20px;
             border-bottom: 5px solid $blue_card;
+            max-height: 300px;
             &:hover {
                 border-bottom: 5px solid $green_langs_bb_h;
             }
@@ -19,11 +23,18 @@
         font-family: 'Palanquin Dark', sans-serif;
         color: $blue_font;
         text-align: center;
-        border-bottom: 6px solid #52f28a;
+        padding: 0px 60px;
+        height: 620px;
+        position: relative;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
         h2 {
-            font-size: 4rem;
+            font-size: 4.5rem;
             line-height: 1.3em;
             letter-spacing: 2px;
+            border-bottom: 6px solid $green;
+            padding-bottom: 15px;
+            }
         }
     }
-}

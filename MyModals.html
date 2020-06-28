@@ -1,0 +1,57 @@
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <img class="img-responsive logo_login" src="/Content/images/logo_dutongui.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" id="inputCorreoLogin" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="inputPasswordLogin" class="form-control" onkeypress="return runScript(event);" placeholder="Password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="cmdEntrar" name="cmdEntrar" class="btn btn-default" onclick="AjaxGetUsuario();" value="Log in">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a id="olvidarPasswordLabel" href="/Usuario/OlvidarPassword">I have forgotten my password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <img class="img-responsive logo_login" src="/Content/images/logo_dutongui.png" alt="">
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Name:">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputCorreoRegistro" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputUsuarioSkype" placeholder="Skype user:">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="inputAddPasswordLogin" placeholder="Password">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" id="cmdRegistrar" name="cmdRegistrar" class="btn btn-default" onclick="guardaUsuario();" value="Sing up">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="/Usuario/RegistroProfesor" id="registrarteComoMaestroLabel">Register as a teacher</a>
+                </div>
+            </div>
+        </div>
+    </div>

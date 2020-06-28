@@ -3,12 +3,14 @@ mixin popular_video(v_source)
         
 mixin list(text)
     li.square_ad= text
+
         
 mixin square_media(social_icon)
-    li.square_ad= titulo
+    li.square_ad
+        a(href=social_icon)
         
 mixin card_languages(imagen)
-    .col-xs-6
+    .col-xs-12.col-sm-6
         .card
             .card__languages
                 .card__languages__image
@@ -17,13 +19,15 @@ mixin card_languages(imagen)
 mixin card_HowDoes(title,desc)
     .card
         .card__How
-            h2.card__How__title= title
-            p.card__How__desc= desc
+            .card__How__title
+                h2= title
+            .card__How__desc
+                p= desc
                         
-mixin card_WhyDutongui(title,desc) 
-    .col-xs-6
+mixin card_WhyDutongui(title,desc,icon)
+    .col-xs-12.col-sm-6
         .card
             .card__Why
-                <i aria-hidden="true" class="fas fa-chalkboard-teacher"></i>
+                i(aria-hidden="true" class=icon)
                 h3.card__Why__title= title
-                p.card__Why__desc= desc
+                p.card__Why__desc= desc  

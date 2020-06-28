@@ -1,30 +1,44 @@
 .HowDoes {
+    margin-bottom: 80px;
     .card {
         @extend %border-cards;
         border-radius: 25px;
         &__How {
             padding: 20px;
+            height: 366px;
+            align-content: center;
+            display: flex;
+            flex-wrap: wrap;            
             &__title {
+                margin-bottom: 20px;
                 font-family: "Montserrat", Sans-serif;
                 color: $blue_font;
+                text-align: center;
                 font-style: italic;
-                font-weight: bold;
+                width: 100%;
+                h2 {
+                    font-size: 29px;
+                    font-weight: bold;
+                }
             }
             &__desc {
                 font-family: 'Quicksand', sans-serif;
-                font-size: 20px;
+                p {
+                    font-size: 20px;
+                }
             }
         }
     }
-    &__Title {  
+    &__Title { 
         color: $blue_font;
         font-family: 'Palanquin Dark', sans-serif;
+        margin-bottom: 20px;
         h2 {
-            font-size: 4rem;
+            font-size: 4.5rem;
             margin: 0;
         }
     }
-    video {
+    video { 
         max-width: 100%;
     }
 }

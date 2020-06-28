@@ -1,3 +1,11 @@
-footer {
+.Cover__footer {
     background-color: #080b28;
+    &__Left {
+        padding: 0px;
+        list-style-type: none;
+        li {
+            color: white;
+            font-family: "Lato", Sans-serif;
+        }
+    }
 }
