@@ -1,0 +1,20 @@
+footer.Under
+    .container
+        .col-xs-12.col-sm-4
+            ul.Under__Left
+                +list('ARE YOU AN ONLINE TEACHER?','./Content/')
+                li 
+                    a(href="#" class="Under__Left__Teacher") Sign up as a teacher
+                        <i aria-hidden="true" class="fas fa-sign-in-alt"></i>
+                +list('CODE OF CONDUCT','./Find/')
+                +list('CONTACT US','./Theme/')
+ 
+        .col-xs-12.col-sm-4.Under__Center
+            img(src="./Content/Images/dutongui_black.png" class="img-responsive")
+
+        .col-xs-12.col-sm-4.Under__Right
+            h4 SOCIAL
+            +square_media("fab fa-instagram","http://google.com")
+            +square_media("fab fa-facebook-f","http://google.com")
+            +square_media("fab fa-whatsapp","http://google.com")
+            +square_media("fab fa-youtube","http://google.com")                                                

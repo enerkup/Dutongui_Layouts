@@ -6,7 +6,7 @@ html(lang='es-MX')
         <meta name="viewport" content="width=device-width, initial-scale=1">
         title Dutongui - English Classes
         link(rel="stylesheet" href="./Content/css/bootstrap.css")
-        link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/general.css")
+        link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/dutongui_fresh.css")
         link(rel="stylesheet" href="./Content/Themes/dutongui_fresh/fonts/fontawesome-free-5.13.1-web/css/all.min.css")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap")
         link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap")
@@ -21,27 +21,33 @@ html(lang='es-MX')
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-    include mixins.pug  
-    
+    include ./Pug/mixins.pug 
+      
     body  
         .container-fluid.Introducing
-            .container  
+            .container   
                 .row
-                    ul.Introducing__Menu
-                        li.col-xs-5.Introducing__Menu__Left
-                                 p 
-                                    a(href="/Usuario/BuscaProfesor") Find a teacher 
-                        li.col-xs-2.Introducing__Menu__Center
-                            img(src="./Content/Images/top_logo.png")
-                        li.col-xs-5.Introducing__Menu__Right
-                            ul.Introducing__Menu__Right__Child
-                                li 
+                    nav
+                        .Introducing__Controls
+                                button#abre_menu.fa.fa-bars
+                        ul.Introducing__Menu
+                            li.col-xs-5.Introducing__Menu__Left
                                     p 
-                                        a(href="#/" data-toggle="modal" data-target="#myLogin") Log in
-                                li 
-                                    p 
-                                        a(href="/login" data-toggle="modal" data-target="#mySignUp") Sign up 
-
+                                        a(href="/Usuario/BuscaProfesor") Find a teacher 
+                            li.col-xs-2.Introducing__Menu__Center
+                                img(src="./Content/Images/top_logo.png")
+                            li.col-xs-5.Introducing__Menu__Right
+                                ul.Introducing__Menu__Right__Child
+                                    li 
+                                        p 
+                                            a(href="#/" data-toggle="modal" data-target="#myLogin") Log in
+                                    li 
+                                        p 
+                                            a(href="/login" data-toggle="modal" data-target="#mySignUp") Sign up 
+            .container
+                .row 
+                    .col-xs-12.Introducing__LogoMobile
+                        img(src="./Content/Images/top_logo.png")
                 .row  
                     .col-xs-12.col-sm-6.Introducing__First
                         .Introducing__First__Title                        
@@ -52,30 +58,43 @@ html(lang='es-MX')
                         .Introducing__First__link
                             a GET STARTED TODAY 
                                 <i aria-hidden="true" class="fas fa-arrow-down"></i>
-                    .col-xs-12.col-sm-6.Introducing__video
+                        .Introducing__First__Trust
+                            p Check out what our clients say...
+                            include ./Pug/trustPilot.html
+                    .col-xs-12.col-sm-6.Introducing__video.hidden-xs
                         img(class="img-responsive" src="./Content/Images/lap1.png")
-                        +popular_video('./Content/Videos/ejemplo-hoy.mp4')
+                        +popular_video('./Content/Videos/User_In_Computer.mp4')
             .Introducing__waves
                 img(src="./Content/Images/waves.svg")
-                            
-         
-        section.HowDoes
-            .container
+                             
+          
+        section.HowDoes   
+            .container  
                     .row
                         .col-xs-12.HowDoes__Title
                             h2 How does it work?
-                    .row
+                    .row.HowDoes__Steps
                         .col-xs-12.col-sm-7 
-                            +popular_video('./Content/Videos/ejemplo-2a.mp4')
+                            +popular_video('./Content/Videos/How_Video_1.mp4')
                         .col-xs-12.col-sm-5
-                            +card_HowDoes('1. Choose Your Professor','Look at the teachers’ profiles and choose the one you like best.')
+                            +card_HowDoes('1. Choose Your Professor',
+                                          'Look at the teachers’ profiles and choose the one you like best.')
         
-                    .row
+                    .row.HowDoes__Steps
                         .col-xs-12.col-sm-5
-                            +card_HowDoes('2. Book A Lesson','Look at the teachers’ profiles and choose the one you like best.')
+                            +card_HowDoes('2. Book A Lesson',
+                                          'Look at the teachers’ profiles and choose the one you like best.')
                         .col-xs-12.col-sm-7
-                            +popular_video('./Content/Videos/ejemplo-2a.mp4')
-        
+                            +popular_video('./Content/Videos/How_Video_2.mp4')
+
+                    .row.HowDoes__Steps
+                        .col-xs-12.col-sm-7 
+                            +popular_video('./Content/Videos/How_Video_3.mp4')
+                        .col-xs-12.col-sm-5
+                            +card_HowDoes('3. Start To Learn',
+                                          'Get in touch with your teacher and start learning by video call.')
+
+
 
         section.WhyDutongui 
             .container  
@@ -132,7 +151,8 @@ html(lang='es-MX')
 
         script(src="http://dutongui.com/Scripts/default/jquery-1.12.4.min.js")
         script(src="http://dutongui.com/Scripts/default/bootstrap.min.js")
+        script(src="./Content/JS/dutongui_fresh.js")
 
 
-        include MyModals.html
-        include footer.pug
+        include ./Pug/MyModals.html
+        include ./Pug/footer.pug

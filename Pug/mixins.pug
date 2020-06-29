@@ -1,13 +1,15 @@
 mixin popular_video(v_source)
     video(src=v_source,autoplay,loop,muted="muted",playsinline,controlslist="nodownload")
         
-mixin list(text)
-    li.square_ad= text
+mixin list(text,url)
+    li
+        a(href=url)=text
 
         
-mixin square_media(social_icon)
-    li.square_ad
-        a(href=social_icon)
+mixin square_media(social_icon,url)
+    li
+        a(href=url)
+            i(class=social_icon)
         
 mixin card_languages(imagen)
     .col-xs-12.col-sm-6

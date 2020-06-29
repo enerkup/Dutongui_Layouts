@@ -41,7 +41,61 @@
             right: 118px;
         }
     }
+    &__Controls {
+        @include mobile {
+            display: block;
+        }
+        display: none;
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 3;
+        button { 
+            width: 50px;
+            height: 50px;
+            border: none;
+            background: #4a4a4a;
+            border-radius: 15px;
+            font-size: 30px;
+            color: white;
+        }
+    }
     &__Menu{
+        @include mobile {
+            transition: all .1s;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin-left: 1050px;
+            padding-right: 50px;
+            padding-top: 130px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgb(155, 178, 191);
+            li {
+                display: block;
+                width: 100%;
+                a {
+                    font-size: 30px;
+                }
+            }
+            &__Left{
+                text-align: right;
+            }
+            &__Center{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 3;
+                margin-top: 20px;
+                margin-left: -15px;
+            }
+            &.show { 
+                margin-left: 50px;
+            }
+        }
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -83,23 +137,40 @@
             }
         }
     }
+    &__LogoMobile{
+        display: none;
+        @include mobile {
+            display: block;
+            text-align: center;
+            img {
+                display: inline-block;
+                width: 140px;
+            }
+        }
+    }
     &__First {
+        @include mobile {
+            margin-top: 20px;
+        }
         margin-top: 90px;
         &__link { 
             text-align: center;
             margin-top: 50px;
             a {
+                transition: all .5s; 
                 border-radius: 45px;
-                font-size: 15px;
+                font-size: 1.1em;
                 text-transform: uppercase;
                 background-color: $red; 
                 color: white;
-                padding: 15px 30px;
+                padding: 13px 30px;
                 border: 2px solid white;
+                display: inline-block;
                 &:hover {
                     background-color: transparent;
                     text-decoration: none;
                     cursor: pointer;
+                    transform: scale(1.1);
                 }
                 i {
                     padding-left: 5px;
@@ -113,6 +184,16 @@
                 color: white;
                 font-family: 'Ubuntu', sans-serif;
                 font-size: 43px;
+            }
+        }
+        &__Trust {
+            margin-top: 60px;
+            text-align: center;
+            p{
+                margin:0px
+            }
+            img{
+                max-width: 100%;
             }
         }
         p {

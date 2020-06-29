@@ -5,21 +5,30 @@
         @extend %border-cards;
         border-radius: 6px;
         &__languages {
+            transition: all .5s;
             margin-bottom: 20px;
             padding: 20px;
             border-bottom: 5px solid $blue_card;
-            max-height: 300px;
+            max-height: 310px;
             &:hover {
                 border-bottom: 5px solid $green_langs_bb_h;
             }
             &__image {
                 img {
                     max-width: 100%;
+                    height: 260px;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
     }
     &__Title {
+        @include mobile {
+            height: auto;      
+            padding: 0px;      
+        }
         font-family: 'Palanquin Dark', sans-serif;
         color: $blue_font;
         text-align: center;

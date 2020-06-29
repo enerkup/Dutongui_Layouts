@@ -2,6 +2,17 @@
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
 
+/*
+    xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+*/
+@media (max-width: 767px) {
+  .no_scroll {
+    overflow: hidden;
+  }
+}
 .Introducing {
   background-color: transparent;
   background-image: linear-gradient(180deg, #0051D2 0%, #6EC1E4 100%);
@@ -46,12 +57,70 @@
   top: 90px;
   right: 118px;
 }
+.Introducing__Controls {
+  display: none;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 3;
+}
+@media (max-width: 767px) {
+  .Introducing__Controls {
+    display: block;
+  }
+}
+.Introducing__Controls button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: #4a4a4a;
+  border-radius: 15px;
+  font-size: 30px;
+  color: white;
+}
 .Introducing__Menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 767px) {
+  .Introducing__Menu {
+    transition: all 0.1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 1050px;
+    padding-right: 50px;
+    padding-top: 130px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #9bb2bf;
+  }
+  .Introducing__Menu li {
+    display: block;
+    width: 100%;
+  }
+  .Introducing__Menu li a {
+    font-size: 30px;
+  }
+  .Introducing__Menu__Left {
+    text-align: right;
+  }
+  .Introducing__Menu__Center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    margin-top: 20px;
+    margin-left: -15px;
+  }
+  .Introducing__Menu.show {
+    margin-left: 50px;
+  }
 }
 .Introducing__Menu li {
   display: inline-block;
@@ -88,26 +157,47 @@
 .Introducing__Menu a:hover {
   text-decoration: none;
 }
+.Introducing__LogoMobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .Introducing__LogoMobile {
+    display: block;
+    text-align: center;
+  }
+  .Introducing__LogoMobile img {
+    display: inline-block;
+    width: 140px;
+  }
+}
 .Introducing__First {
   margin-top: 90px;
+}
+@media (max-width: 767px) {
+  .Introducing__First {
+    margin-top: 20px;
+  }
 }
 .Introducing__First__link {
   text-align: center;
   margin-top: 50px;
 }
 .Introducing__First__link a {
+  transition: all 0.5s;
   border-radius: 45px;
-  font-size: 15px;
+  font-size: 1.1em;
   text-transform: uppercase;
   background-color: #CE0008;
   color: white;
-  padding: 15px 30px;
+  padding: 13px 30px;
   border: 2px solid white;
+  display: inline-block;
 }
 .Introducing__First__link a:hover {
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .Introducing__First__link a i {
   padding-left: 5px;
@@ -120,6 +210,16 @@
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 43px;
+}
+.Introducing__First__Trust {
+  margin-top: 60px;
+  text-align: center;
+}
+.Introducing__First__Trust p {
+  margin: 0px;
+}
+.Introducing__First__Trust img {
+  max-width: 100%;
 }
 .Introducing__First p {
   color: white;
@@ -139,6 +239,12 @@
   align-content: center;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .HowDoes .card__How {
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 .HowDoes .card__How__title {
   margin-bottom: 20px;
@@ -167,6 +273,9 @@
   font-size: 4.5rem;
   margin: 0;
 }
+.HowDoes__Steps {
+  margin-bottom: 60px;
+}
 .HowDoes video {
   max-width: 100%;
 }
@@ -179,16 +288,21 @@
   border-radius: 6px;
 }
 .WantLearn .card__languages {
+  transition: all 0.5s;
   margin-bottom: 20px;
   padding: 20px;
   border-bottom: 5px solid #0762d9;
-  max-height: 300px;
+  max-height: 310px;
 }
 .WantLearn .card__languages:hover {
   border-bottom: 5px solid #30d979;
 }
 .WantLearn .card__languages__image img {
   max-width: 100%;
+  height: 260px;
+}
+.WantLearn .card__languages__image img:hover {
+  transform: scale(1.1);
 }
 .WantLearn__Title {
   font-family: "Palanquin Dark", sans-serif;
@@ -200,6 +314,12 @@
   align-content: center;
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .WantLearn__Title {
+    height: auto;
+    padding: 0px;
+  }
 }
 .WantLearn__Title h2 {
   font-size: 4.5rem;
@@ -225,11 +345,16 @@
 }
 .WhyDutongui__Box {
   background-color: #0762d9;
-  padding: 85px 50px 70px 50px;
+  padding: 85px 50px 52px 50px;
   border-radius: 5px;
   position: relative;
   margin-bottom: 14px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .WhyDutongui__Box {
+    padding: 85px 15px 50px 15px;
+  }
 }
 .WhyDutongui__Box img {
   border-radius: 18px 176px 18px 18px;
@@ -238,7 +363,7 @@
   font-family: "Montserrat", Sans-serif;
   font-size: 1.3em;
   color: white;
-  margin: 10px 0px 22px;
+  margin: 10px 0px 10px;
 }
 .WhyDutongui__Box span {
   background-color: #52f28a;
@@ -251,6 +376,7 @@
   margin-left: 25px;
 }
 .WhyDutongui__Box a {
+  transition: all 0.5s;
   background-color: #D70303;
   border-radius: 30px 30px 30px 30px;
   box-shadow: -100px 4px 100px -28px rgba(148, 35, 35, 0.99) inset;
@@ -259,9 +385,11 @@
   font-weight: bold;
   padding: 15px 30px;
   font-size: 1.05em;
+  display: inline-block;
 }
 .WhyDutongui__Box a:hover {
   text-decoration: none;
+  transform: scale(1.1);
 }
 .WhyDutongui .card__Why {
   padding: 20px;
@@ -269,6 +397,11 @@
   background-color: white;
   height: 314px;
   margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .WhyDutongui .card__Why {
+    text-align: center;
+  }
 }
 .WhyDutongui .card__Why i {
   color: #0762d9;
@@ -331,25 +464,196 @@
   border-radius: 50px 0px 50px 50px;
   box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
   padding: 18px 35px 18px 35px;
+  display: inline-block;
 }
 .Today__Link a:hover {
   text-decoration: none;
+  color: #635DFF;
+  background-color: #FFFFFF;
+  transform: translateY(-8px);
 }
 .Today__Link a img {
   width: 22px;
   margin-left: 10px;
+  margin-top: -3px;
 }
 
-.Cover__footer {
-  background-color: #080b28;
+#myLogin .logo_login {
+  width: 110px;
+  display: inline-block;
 }
-.Cover__footer__Left {
+#myLogin .modal-content {
+  background-color: rgba(30, 60, 97, 0.96);
+  margin-top: 130px;
+}
+#myLogin .modal-footer {
+  border-top: none;
+}
+#myLogin .modal-footer a {
+  color: white;
+}
+#myLogin .modal-header {
+  border-bottom: none;
+}
+#myLogin form {
+  padding: 0px 15px;
+}
+#myLogin form button {
+  padding: 6px 30px;
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-size: 19px;
+  background: linear-gradient(#0862f3, #033486);
+}
+#myLogin form input {
+  font-size: 18px;
+}
+#myLogin form .form-group {
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  #myLogin .modal-dialog {
+    width: 370px;
+    margin: 30px auto;
+  }
+}
+
+#mySignUp .logo_login {
+  width: 110px;
+  display: inline-block;
+}
+#mySignUp .modal-content {
+  background-color: rgba(30, 60, 97, 0.96);
+  margin-top: 130px;
+}
+#mySignUp .modal-footer {
+  border-top: none;
+}
+#mySignUp .modal-footer a {
+  color: white;
+}
+#mySignUp .modal-header {
+  border-bottom: none;
+}
+#mySignUp form {
+  padding: 0px 15px;
+}
+#mySignUp form button {
+  padding: 6px 30px;
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-size: 19px;
+  background: linear-gradient(#0862f3, #033486);
+}
+#mySignUp form input {
+  font-size: 18px;
+}
+#mySignUp form .form-group {
+  margin-bottom: 10px;
+}
+#mySignUp form button {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  #mySignUp .modal-dialog {
+    width: 370px;
+    margin: 30px auto;
+  }
+}
+
+.Under {
+  background-color: #080b28;
+  padding: 50px 0px 50px 0px;
+}
+.Under__Left {
   padding: 0px;
   list-style-type: none;
 }
-.Cover__footer__Left li {
+.Under__Left li {
   color: white;
   font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: block;
+}
+.Under__Left__Teacher {
+  transition: all 0.5s;
+  background-color: #D70303;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: -100px 4px 100px -28px rgba(148, 35, 35, 0.99) inset;
+  font-size: 14px;
+  padding: 15px 35px;
+  font-family: "Montserrat", Sans-serif;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .Under__Left__Teacher {
+    padding: 15px;
+  }
+}
+.Under__Left__Teacher i {
+  margin-left: 10px;
+}
+.Under__Left__Teacher:hover {
+  transform: scale(1.1);
+}
+.Under__Left a {
+  color: white;
+}
+.Under__Left a:hover {
+  text-decoration: none;
+}
+.Under__Center {
+  text-align: center;
+}
+.Under__Center img {
+  display: inline-block;
+  width: 260px;
+  text-align: center;
+}
+.Under__Right {
+  text-align: right;
+}
+.Under__Right h4 {
+  color: white;
+  padding-bottom: 30px;
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.Under__Right h4:after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 2px;
+  background-color: white;
+  margin-top: 30px;
+  right: 0;
+  margin-right: 15px;
+}
+.Under__Right li {
+  display: inline-block;
+}
+.Under__Right i {
+  color: white;
+  border-radius: 10%;
+  padding: 9px 12px;
+}
+.Under__Right i.fa-facebook-f {
+  background-color: #3b5998;
+}
+.Under__Right i.fa-whatsapp {
+  background-color: #25d366;
+}
+.Under__Right i.fa-youtube {
+  background-color: #cd201f;
 }
 
-/*# sourceMappingURL=general.css.map */
+/*# sourceMappingURL=dutongui_fresh.css.map */

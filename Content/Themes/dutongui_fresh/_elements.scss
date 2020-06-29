@@ -10,3 +10,31 @@ $wine: #D70303;
 %border-cards {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
 }
+
+/*
+    xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+*/
+
+$tablet-width: 768px - 1;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@include mobile {
+  .no_scroll {
+    overflow: hidden;
+  }
+}
