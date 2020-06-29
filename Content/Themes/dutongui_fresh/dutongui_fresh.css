@@ -516,6 +516,11 @@ body.no_scroll .Introducing:before {
   background-color: rgba(30, 60, 97, 0.96);
   margin-top: 130px;
 }
+@media (max-width: 767px) {
+  #myLogin .modal-content {
+    margin-top: 30px;
+  }
+}
 #myLogin .modal-footer {
   border-top: none;
 }
@@ -557,6 +562,11 @@ body.no_scroll .Introducing:before {
 #mySignUp .modal-content {
   background-color: rgba(30, 60, 97, 0.96);
   margin-top: 130px;
+}
+@media (max-width: 767px) {
+  #mySignUp .modal-content {
+    margin-top: 30px;
+  }
 }
 #mySignUp .modal-footer {
   border-top: none;
