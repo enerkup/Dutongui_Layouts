@@ -2,19 +2,20 @@ footer.Under
     .container
         .col-xs-12.col-sm-4
             ul.Under__Left
-                +list('ARE YOU AN ONLINE TEACHER?','./Content/')
+                +list('ARE YOU AN ONLINE TEACHER?','/Usuario/RegistroProfesor')
                 li 
                     a(href="#" class="Under__Left__Teacher") Sign up as a teacher
                         <i aria-hidden="true" class="fas fa-sign-in-alt"></i>
-                +list('CODE OF CONDUCT','./Find/')
-                +list('CONTACT US','./Theme/')
+                +list('CODE OF CONDUCT','/Content/documents/CODIGO_CONDUCTA.pdf')
+                +list('CONTACT US','mailto:contacto@dutongui.com?Subject=Hello%20again')
  
         .col-xs-12.col-sm-4.Under__Center
-            img(src="./Content/Images/dutongui_black.png" class="img-responsive")
+            a(href="#")
+                img(src="./Content/Images/dutongui_black.png" class="img-responsive")
 
         .col-xs-12.col-sm-4.Under__Right
             h4 SOCIAL
-            +square_media("fab fa-instagram","http://google.com")
-            +square_media("fab fa-facebook-f","http://google.com")
-            +square_media("fab fa-whatsapp","http://google.com")
-            +square_media("fab fa-youtube","http://google.com")                                                
+            +square_media("fab fa-instagram","#/")
+            +square_media("fab fa-facebook-f","https://www.facebook.com/Dutonguimexico")
+            +square_media("fab fa-whatsapp","https://wa.me/5215529641081")
+            +square_media("fab fa-youtube","https://www.youtube.com/channel/UCtBZrPV9SUqAne7v_1DRtIQ")                                       
