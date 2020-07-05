@@ -53,6 +53,16 @@ body.no_scroll{
             position: absolute;
             top: 90px;
             right: 118px;
+            @include sdesktop {  
+                width: 282px;
+                top: 85px;
+                right: 102px;
+            }            
+            @include tablets {
+                width: 210px;
+                top: 78px;
+                right: 83px;
+            }
         }
     }
     &__Controls {
